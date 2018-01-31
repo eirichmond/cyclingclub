@@ -1,0 +1,11 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+.comments-area {
+	@include rowrap();
+	margin: 0 auto;
+	padding: 2em 0;
+}
