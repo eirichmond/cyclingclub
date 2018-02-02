@@ -36,6 +36,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Content
 	## Posts and pages
 	## Comments
+	## Classes
 # Infinite scroll
 # Animation
 # Media
@@ -102,56 +103,56 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Include Lato */
 @font-face {
   font-family: 'lato';
-  src: url("fonts/lato/Lato-Light.ttf") format("ttf");
+  src: url("/fonts/lato/Lato-Light.ttf") format("ttf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'lato';
-  src: url("fonts/lato/Lato-LightItalic.ttf") format("ttf");
+  src: url("/fonts/lato/Lato-LightItalic.ttf") format("ttf");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'lato';
-  src: url("fonts/lato/Lato-Regular.ttf") format("ttf");
+  src: url("/fonts/lato/Lato-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'lato';
-  src: url("fonts/lato/Lato-Italic.ttf") format("ttf");
+  src: url("/fonts/lato/Lato-Italic.ttf") format("ttf");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'lato';
-  src: url("fonts/lato/Lato-Bold.ttf") format("ttf");
+  src: url("/fonts/lato/Lato-Bold.ttf") format("ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'lato';
-  src: url("fonts/lato/Lato-BlackItalic.ttf") format("ttf");
+  src: url("/fonts/lato/Lato-BlackItalic.ttf") format("ttf");
   font-weight: bolder;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'lato';
-  src: url("fonts/lato/Lato-BoldItalic.ttf") format("ttf");
+  src: url("/fonts/lato/Lato-BoldItalic.ttf") format("ttf");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'lato';
-  src: url("fonts/lato/Lato-Black.ttf") format("ttf");
+  src: url("/fonts/lato/Lato-Black.ttf") format("ttf");
   font-weight: 900;
   font-style: normal;
 }
@@ -380,14 +381,14 @@ select,
 optgroup,
 textarea {
   color: #ffffff;
-  font-family: "lato";
+  font-family: "Open Sans", "san-serif";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.35;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "lato";
+  font-family: "Open Sans", "san-serif";
   clear: both;
   text-transform: uppercase;
 }
@@ -527,7 +528,7 @@ blockquote p {
   font-style: italic;
   font-size: 1.2em;
   color: #989c9c;
-  font-family: "lato";
+  font-family: "Open Sans", "san-serif";
 }
 
 /*--------------------------------------------------------------
@@ -547,7 +548,7 @@ input[type="submit"] {
   line-height: 1;
   padding: .6em 1em .4em;
   text-transform: uppercase;
-  font-family: 'lato';
+  font-family: "Open Sans", "san-serif";
 }
 
 button:hover,
@@ -627,7 +628,7 @@ a {
 }
 
 a:visited {
-  color: #2191FB;
+  color: #68B1DF;
 }
 
 a:hover, a:focus, a:active {
@@ -681,7 +682,7 @@ a:hover, a:active {
 
 .main-navigation ul ul a {
   width: 200px;
-  color: #2B3D41;
+  color: #0F1E29;
 }
 
 .main-navigation ul ul :hover > a,
@@ -708,7 +709,7 @@ a:hover, a:active {
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
-  background: #2191FB;
+  background: #68B1DF;
 }
 
 .main-navigation a {
@@ -717,7 +718,7 @@ a:hover, a:active {
   color: #000;
   background: #fff;
   padding: 11px;
-  font-family: 'lato';
+  font-family: "Open Sans", "san-serif";
   border-bottom: 1px solid #000;
   text-transform: uppercase;
   font-size: 0.8em;
@@ -890,16 +891,12 @@ a:hover, a:active {
   margin: 2em auto;
 }
 
-.site-header {
-  background: #0F1E29;
-}
-
 h1.site-title {
   margin-bottom: 0;
 }
 
 h1.site-title, p.site-title {
-  font-family: "lato";
+  font-family: "Open Sans", "san-serif";
   clear: both;
   text-transform: uppercase;
   font-weight: bolder;
@@ -926,6 +923,30 @@ p.site-description {
 }
 
 /*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.row {
+  width: 1024px;
+  margin: 0px auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .row {
+    width: 90%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .row {
+    width: 90%;
+  }
+}
+
+.accent-background-colour {
+  background: #0F1E29;
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
@@ -940,15 +961,9 @@ p.site-description {
   display: none;
 }
 
-.entry-header {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .page-content,
 .entry-content,
 .entry-summary, .entry-footer {
-  width: 90%;
   margin: 1.5em auto 0 auto;
 }
 

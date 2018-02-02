@@ -29,10 +29,16 @@
 }
 
 // responsive for min and max widths
+
+@mixin mobile {
+	@media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+	    @content;
+	}
+}
 @mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
 }
 
 @mixin desktop {
