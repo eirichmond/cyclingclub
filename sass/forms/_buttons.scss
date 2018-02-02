@@ -11,7 +11,7 @@ input[type="submit"] {
 	line-height: 1;
 	padding: .6em 1em .4em;
 	text-transform: uppercase;
-	font-family: 'lato';
+	font-family: $font__main;
 	&:hover {
 		border-color: $color__border-button-hover;
 	}
