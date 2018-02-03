@@ -12,3 +12,19 @@
 .accent-background-colour {
     background: $color__primary-darker;
 }
+
+.trim-colour {
+    color: $color__trim-color;
+}
+
+.trim-border {
+	border-color: $color__trim-color;
+}
+
+.trim-border-bottom {
+	border-color-bottom: $color__trim-color;
+}
+
+.trim-background-color {
+    background: $color__trim-color;
+}

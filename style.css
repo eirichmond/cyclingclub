@@ -45,116 +45,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 /* Include Merriweather */
 @font-face {
-  font-family: 'merriweather';
-  src: url("fonts/merriweather/Merriweather-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("fonts/merriweather/Merriweather-Italic.ttf") format("ttf");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("fonts/merriweather/Merriweather-Light.ttf") format("ttf");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("fonts/merriweather/Merriweather-LightItalic.ttf") format("ttf");
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("fonts/merriweather/Merriweather-Bold.ttf") format("ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("fonts/merriweather/Merriweather-Bolditalic.ttf") format("ttf");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("fonts/merriweather/Merriweather-Black.ttf") format("ttf");
-  font-weight: bolder;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("fonts/merriweather/Merriweather-HeavyItalic.ttf") format("ttf");
-  font-weight: 900;
-  font-style: italic;
-}
-
-/* Include Lato */
-@font-face {
-  font-family: 'lato';
-  src: url("/fonts/lato/Lato-Light.ttf") format("ttf");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'lato';
-  src: url("/fonts/lato/Lato-LightItalic.ttf") format("ttf");
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'lato';
-  src: url("/fonts/lato/Lato-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'lato';
-  src: url("/fonts/lato/Lato-Italic.ttf") format("ttf");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'lato';
-  src: url("/fonts/lato/Lato-Bold.ttf") format("ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'lato';
-  src: url("/fonts/lato/Lato-BlackItalic.ttf") format("ttf");
-  font-weight: bolder;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'lato';
-  src: url("/fonts/lato/Lato-BoldItalic.ttf") format("ttf");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'lato';
-  src: url("/fonts/lato/Lato-Black.ttf") format("ttf");
-  font-weight: 900;
-  font-style: normal;
+  font-family: 'open-sans', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -384,7 +275,7 @@ textarea {
   font-family: "Open Sans", "san-serif";
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.35;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -456,7 +347,7 @@ html {
 }
 
 body {
-  background: #2B3D41;
+  background: #fff;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -468,7 +359,7 @@ hr {
 }
 
 ul, ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0 0 1.5em 0em;
 }
 
 ul {
@@ -511,9 +402,10 @@ table {
 }
 
 article {
-  background: #fff;
-  color: #6c7475;
-  padding: 1em 0;
+  color: #838383;
+  border-left: 3px solid #68B1DF;
+  padding: 0 0 0 30px;
+  margin-left: 90px;
 }
 
 blockquote {
@@ -624,7 +516,8 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #68B1DF;
+  text-decoration: none;
 }
 
 a:visited {
@@ -650,7 +543,7 @@ a:hover, a:active {
   clear: both;
   display: block;
   width: 100%;
-  padding: 1.5em;
+  padding: 13px;
 }
 
 .main-navigation ul {
@@ -721,7 +614,7 @@ a:hover, a:active {
   font-family: "Open Sans", "san-serif";
   border-bottom: 1px solid #000;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 13px;
   transition: all 0.5s ease;
 }
 
@@ -883,12 +776,33 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.content-area {
+  float: left;
+  margin: 0 -33% 0 0;
+  width: 66%;
+}
+
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 33%;
+}
+
+.site-footer {
+  clear: both;
+  width: 66%;
+}
+
+.site-main, .widget-area {
+  margin-top: 45px;
+}
+
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
 .site-branding {
   width: 90%;
-  margin: 2em auto;
+  margin: 1.5em auto;
 }
 
 h1.site-title {
@@ -907,7 +821,7 @@ h1.site-title, p.site-title {
 
 @media (min-width: 1024px) {
   h1.site-title, p.site-title {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 
@@ -920,6 +834,15 @@ p.site-description {
   text-align: center;
   margin: 0;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.entry-title {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-weight: normal;
+  font-size: 2.2em;
+  margin: 0 0 1em 0;
 }
 
 /*--------------------------------------------------------------
@@ -946,6 +869,22 @@ p.site-description {
   background: #0F1E29;
 }
 
+.trim-colour {
+  color: #68B1DF;
+}
+
+.trim-border {
+  border-color: #68B1DF;
+}
+
+.trim-border-bottom {
+  border-color-bottom: #68B1DF;
+}
+
+.trim-background-color {
+  background: #68B1DF;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -954,7 +893,7 @@ p.site-description {
 }
 
 .hentry {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5em 2.5em;
 }
 
 .updated:not(.published) {
@@ -970,6 +909,30 @@ p.site-description {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.cat-links {
+  display: block;
+  font-weight: 100;
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.tags-links {
+  display: block;
+  font-weight: 100;
+}
+
+a.post-edit-link {
+  padding: 3px 15px;
+  margin: 20px 0px;
+  color: #fff;
+}
+
+.edit-link {
+  margin: 15px 0px;
+  line-height: 5;
 }
 
 /*--------------------------------------------------------------
@@ -1038,7 +1001,7 @@ p.site-description {
     opacity: 1;
     position: fixed;
     top: 0;
-    height: 87px;
+    height: 70px;
     background: #0F1E29;
   }
 }
@@ -1062,7 +1025,7 @@ p.site-description {
 }
 
 .sticker-wrapper {
-  height: 87px;
+  height: 70px;
 }
 
 .fix-to-top {

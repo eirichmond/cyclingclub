@@ -10,6 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -56,4 +57,5 @@
 	<footer class="entry-footer">
 		<?php cycling_club_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+		
 </article><!-- #post-<?php the_ID(); ?> -->

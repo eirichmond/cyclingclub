@@ -3,7 +3,7 @@
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.5em 2.5em;
 }
 
 .updated:not(.published) {
@@ -24,3 +24,27 @@
 	margin: 0 0 1.5em;
 }
 
+
+.cat-links {
+    display: block;
+    font-weight:  100;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.tags-links {
+    display: block;
+    font-weight: 100;
+}
+
+a.post-edit-link {
+    padding: 3px 15px;
+    margin: 20px 0px;
+    color: #fff;
+}
+
+.edit-link {
+    margin: 15px 0px;
+    line-height: 5;
+}

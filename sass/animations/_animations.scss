@@ -29,7 +29,7 @@
 		opacity: 1;
 		position: fixed;
 		top:0;
-		height: 87px;
+		height: $navbar__hieght;
 		background: $color__primary-darker;
 	}
 }
@@ -53,7 +53,7 @@
 }
 
 .sticker-wrapper {
-    height: 87px;
+    height: $navbar__hieght;
 }
 
 .fix-to-top {

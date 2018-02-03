@@ -1,6 +1,6 @@
 a {
-	color: $color__link;
-
+	color: $color__trim-color;
+    text-decoration: none;
 	&:visited {
 		color: $color__link-visited;
 	}

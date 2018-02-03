@@ -62,7 +62,7 @@ if ( ! function_exists( 'cycling_club_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'cycling_club' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'cycling_club' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links trim-border-bottom">' . esc_html__( 'Posted in %1$s', 'cycling_club' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
@@ -105,7 +105,7 @@ if ( ! function_exists( 'cycling_club_entry_footer' ) ) :
 				),
 				get_the_title()
 			),
-			'<span class="edit-link">',
+			'<span class="edit-link trim-background-color">',
 			'</span>'
 		);
 	}
