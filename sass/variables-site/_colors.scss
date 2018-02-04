@@ -1,8 +1,11 @@
 $color__primary-accent: #68B1DF;
+//$color__primary-accent: #ba1631;
 $color__primary-dark: #0F1E29;
 $color__primary-darker: #0F1E29;
 $color__body-text: #838383;
-$color__trim-color: #68B1DF;
+
+$color__secondary-pale: #f8f8f8;
+
 
 
 $color__background-body: #fff;
@@ -17,8 +20,8 @@ $color__text-input: #666;
 $color__text-input-focus: #111;
 $color__link: royalblue;
 $color__link-visited: $color__primary-accent;
-$color__link-hover: midnightblue;
-$color__text-main: #ffffff;
+$color__link-hover: $color__primary-dark;
+$color__text-main: $color__body-text;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;

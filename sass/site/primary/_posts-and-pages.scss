@@ -4,6 +4,9 @@
 
 .hentry {
 	margin: 0 0 1.5em 2.5em;
+	@include mobile {
+		margin: 0;
+	}
 }
 
 .updated:not(.published) {
@@ -19,6 +22,11 @@
 	margin: 1.5em auto 0 auto;
 }
 
+.entry-meta {
+    position: relative;
+    padding-bottom: 1em;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -28,9 +36,9 @@
 .cat-links {
     display: block;
     font-weight:  100;
-    border-bottom: 1px solid;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .tags-links {

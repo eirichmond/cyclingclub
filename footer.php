@@ -12,9 +12,19 @@
 ?>
 
 	</div><!-- #content -->
+	
+	<div class="wrap trim-background-color">
+		<div class="row">
+			<?php get_sidebar('footer'); ?>
+		</div>
+	</div>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<footer id="colophon" class="site-footer wrap accent-background-colour">
+		
+		<div class="site-info row">
+			
+			<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => 'footer-menu', ) ); ?>
+			
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cycling_club' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Proudly powered by %s', 'cycling_club' ), 'WordPress' );
@@ -22,9 +32,10 @@
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cycling_club' ), 'cycling_club', '<a href="https://cyclingclubpro.com">Elliott Richmond</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cycling_club' ), 'Cycling Club', '<a href="https://cyclingclubpro.com">Elliott Richmond</a>' );
 			?>
 		</div><!-- .site-info -->
+		
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

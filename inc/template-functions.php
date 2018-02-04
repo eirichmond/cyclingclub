@@ -30,3 +30,11 @@ function cycling_club_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'cycling_club_pingback_header' );
+
+/**
+ * Modifies the more tag when dropped into the post content.
+ */
+function modify_read_more_link() {
+    return '<a class="button" href="' . get_permalink() . '">Read more...</a>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );

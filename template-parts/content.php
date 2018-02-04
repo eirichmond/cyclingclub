@@ -20,7 +20,7 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+		<div class="entry-meta trim-border-bottom">
 			<?php
 				cycling_club_posted_on();
 				cycling_club_posted_by();
