@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package Cycling_Club
+ * @package cyclingclublite
  */
 
 /**

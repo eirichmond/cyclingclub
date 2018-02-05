@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Cycling_Club
+ * @package cyclingclublite
  */
 
 ?>
@@ -15,14 +15,14 @@
 		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php cycling_club_post_thumbnail(); ?>
+	<?php cyclingclublite_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cycling_club' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cyclingclublite' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -35,7 +35,7 @@
 					sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Edit <span class="screen-reader-text">%s</span>', 'cycling_club' ),
+							__( 'Edit <span class="screen-reader-text">%s</span>', 'cyclingclublite' ),
 							array(
 								'span' => array(
 									'class' => array(),

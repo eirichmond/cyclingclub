@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Cycling_Club
+ * @package cyclingclublite
  */
 
 get_header(); ?>
