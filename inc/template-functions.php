@@ -38,3 +38,4 @@ function modify_read_more_link() {
     return '<a class="button" href="' . get_permalink() . '">Read more...</a>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
+

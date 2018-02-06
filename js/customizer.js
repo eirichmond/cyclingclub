@@ -39,4 +39,18 @@
 			}
 		} );
 	} );
+
+	// Accent color.
+	wp.customize( 'accent_color', function( value ) {
+		
+		value.bind( function( to ) {
+			if ( 'blank' === to ) {
+
+			} else {
+				$( '.trim-background-color' ).css( {
+					'background': to,
+				} );
+			}
+		} );
+	} );
 } )( jQuery );

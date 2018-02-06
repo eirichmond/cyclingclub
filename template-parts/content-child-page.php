@@ -18,14 +18,11 @@
 	<?php cyclingclublite_post_thumbnail(); ?>
 
 	<div class="entry-content">
-		<?php
-			the_content();
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cyclingclublite' ),
-				'after'  => '</div>',
-			) );
-		?>
+		
+		<p><?php _e( wp_trim_words( get_the_content(), 40, '...' ), 'cyclingclublite' );?></p>
+		
+		<a class="button" href="<?php echo get_permalink();?>">Read more...</a>
+		
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
