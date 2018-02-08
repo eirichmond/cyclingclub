@@ -44,13 +44,18 @@
 	wp.customize( 'accent_color', function( value ) {
 		
 		value.bind( function( to ) {
-			if ( 'blank' === to ) {
-
-			} else {
-				$( '.trim-background-color' ).css( {
-					'background': to,
-				} );
-			}
+			$( '.trim-border-bottom:after, .button:hover, .main-navigation li:hover > a, .main-navigation li.focus > a, .trim-background-color,.trim-border-bottom:after, .home .secondary-background-colour' ).css( {
+				'background': to,
+			} );
+			$('article a, .site-info > a, #footer-menu li a:hover').css({
+				'color': to,
+			});
+			$('#footer-menu').css({
+				'border-bottom-color': to,
+			});
+			$('article').css({
+				'border-left-color': to,
+			});
 		} );
 	} );
 } )( jQuery );
