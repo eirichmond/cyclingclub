@@ -65,21 +65,27 @@ if ( post_password_required() ) {
 		endif;
 
 	endif; // Check for have_comments().
+	
+$commenter = wp_get_current_commenter();
+$req = get_option( 'require_name_email' );
+$aria_req = ( $req ? " aria-required='true'" : '' );
 
 $fields =  array(
 
   'author' =>
-    '<div class="comment-inputs"><p><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-    '" size="30"' . $aria_req . ' placeholder="Name*" /></p>',
+    '<div class="comment-inputs"><p><label>Name </label><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+    '" size="30"' . $aria_req . ' /></p>',
 
   'email' =>
-    '<p><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-    '" size="30"' . $aria_req . ' placeholder="Email*"/></p>',
+    '<p><label>Email </label><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+    '" size="30"' . $aria_req . ' /></p>',
 
   'url' =>
-    '<p><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
-    '" size="30" placeholder="Website"/></p></div>',
+    '<p><label>Website </label><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
+    '" size="30" /></p></div>',
 );
+
+
 
 $comment_args = array(
 	'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',

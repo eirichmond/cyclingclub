@@ -17,7 +17,7 @@
 
 	<?php cyclingclublite_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div id="front-page" class="entry-content">
 		<?php
 			the_content();
 			

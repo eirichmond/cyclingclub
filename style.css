@@ -1,5 +1,5 @@
 /*!
-Theme Name: CyclingClubLite
+Theme Name: Cycling Club
 Theme URI: http://underscores.me/
 Author: Elliott Richmond
 Author URI: https://cyclingclubpro.com
@@ -1293,6 +1293,34 @@ a.post-edit-link {
   width: 90%;
   margin: 0 auto;
   padding: 2em 0;
+}
+
+.comment-inputs, .form-submit {
+  text-align: right;
+}
+
+#comments button, #comments input[type="button"], #comments input[type="reset"], #comments input[type="submit"] {
+  background-color: #68B1DF;
+}
+
+#comments ol.comment-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#comments li.comment article {
+  margin: 0px;
+  padding: 20px;
+  border: none;
+  background: #f8f8f8;
+}
+
+#comments ol.children {
+  list-style: none;
+  margin: 0px 0 60px;
+  padding: 0 0 0 18px;
+  border-top: 1px solid #efefef;
 }
 
 /*--------------------------------------------------------------

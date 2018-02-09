@@ -67,17 +67,7 @@ function cyclingclublite_customize_css()
 {
     ?>
          <style type="text/css">
-             .button:hover, .main-navigation li:hover > a, .main-navigation li.focus > a, .trim-background-color,.trim-border-bottom:after, .home .secondary-background-colour {
-	             background : <?php echo get_theme_mod('accent_color', '#68B1DF'); ?>; }
-             #content a, #content a:visited, .site-info > a, #footer-menu li a:hover {
-	             color : <?php echo get_theme_mod('accent_color', '#68B1DF'); ?>;
-             }
-             #footer-menu {
-	             border-bottom-color : <?php echo get_theme_mod('accent_color', '#68B1DF'); ?>;
-             }
-             article {
-	             border-left-color : <?php echo get_theme_mod('accent_color', '#68B1DF'); ?>;
-             }
+	         
          </style>
     <?php
 }
