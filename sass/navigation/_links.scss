@@ -1,9 +1,11 @@
 a {
 	color: $color__primary-accent;
     text-decoration: none;
+/*
 	&:visited {
 		color: $color__link-visited;
 	}
+*/
 	&:hover,
 	&:focus,
 	&:active {

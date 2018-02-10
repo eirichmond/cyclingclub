@@ -48,8 +48,10 @@ if ( post_password_required() ) {
 		<?php the_comments_navigation(); ?>
 
 		<ol class="comment-list">
+			
 			<?php
 				wp_list_comments( array(
+					'callback' => 'cyclingclub_comments',
 					'style'      => 'ol',
 					'short_ping' => true,
 				) );
@@ -66,33 +68,34 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 	
-$commenter = wp_get_current_commenter();
-$req = get_option( 'require_name_email' );
-$aria_req = ( $req ? " aria-required='true'" : '' );
-
-$fields =  array(
-
-  'author' =>
-    '<div class="comment-inputs"><p><label>Name </label><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-    '" size="30"' . $aria_req . ' /></p>',
-
-  'email' =>
-    '<p><label>Email </label><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-    '" size="30"' . $aria_req . ' /></p>',
-
-  'url' =>
-    '<p><label>Website </label><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
-    '" size="30" /></p></div>',
-);
-
-
-
-$comment_args = array(
-	'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
-	'comment_notes_before' => '<div class="comment-textbox">',
-	'comment_notes_after' => '</div>',
-	'fields' => $fields
-);
+	$commenter = wp_get_current_commenter();
+		
+	$req = get_option( 'require_name_email' );
+	$aria_req = ( $req ? " aria-required='true'" : '' );
+	
+	$fields =  array(
+	
+	  'author' =>
+	    '<div class="comment-inputs"><p><label>Name </label><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+	    '" size="30"' . $aria_req . ' /></p>',
+	
+	  'email' =>
+	    '<p><label>Email </label><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+	    '" size="30"' . $aria_req . ' /></p>',
+	
+	  'url' =>
+	    '<p><label>Website </label><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
+	    '" size="30" /></p></div>',
+	);
+	
+	
+	
+	$comment_args = array(
+		'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+		'comment_notes_before' => '<div class="comment-textbox">',
+		'comment_notes_after' => '</div>',
+		'fields' => $fields
+	);
 
 	comment_form($comment_args);
 	?>

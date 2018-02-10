@@ -2,7 +2,7 @@
 	.content-area {
 		float: none;
 		margin: 0;
-		width: inherit;
+		width: 100%;
 	}	
 	article {
 	    color: #fff;
@@ -11,6 +11,9 @@
 	    margin: 0;
 	    border-left: 0;
    	}
+	.entry-header {
+	    min-height: 80px;
+	}
 	.entry-title {
 		margin: 0;
 	}
@@ -20,12 +23,43 @@
 		margin: 0px;
 	}
 	.entry-content {
+		position: relative;
 		margin: 0;
 	}
+	.button {
+	    bottom: 0;
+   	}
 	p {
 		font-weight: 100;
 	}
 	.site-main {
 		margin: 0;
 	}
+	#front-page a {
+		color: darken($color__primary-accent, 50%);
+		transition: all 0.5s ease;
+		&:hover {
+			color: lighten($color__primary-accent, 50%);
+		}
+		&.button {
+			color: #fff;
+		}
+	}
+
+}
+
+.home .child-pages {
+	.entry-content {
+		min-height: 250px;
+		position: relative;
+		margin: 0;
+		p {
+		    color: #aaa;
+		}   	
+	}
+	.button {
+	    position: absolute;
+	    left: 25%;
+	    right: 25%;
+   	}
 }

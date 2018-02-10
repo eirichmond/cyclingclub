@@ -5,7 +5,6 @@
 	display: block;
 }
 .comments-area {
-	@include rowrap();
 	margin: 0 auto;
 	padding: 2em 0;
 }
@@ -23,13 +22,16 @@
 	    margin: 0;
 	    padding: 0;
 	    list-style: none;
+	    li {
+		    margin-bottom: 20px;
+	    }
 	}
 	
 	li.comment article {
 		margin: 0px;
 		padding: 20px;
 		border: none;
-		background: #f8f8f8;
+		background: $color__secondary-pale;
 	}
 	
 	ol.children {
@@ -39,4 +41,25 @@
 	    border-top: 1px solid #efefef;
 	}
 	
+	b.fn {
+	    margin-left: 10px;
+	}
+	
+	.commentmetadata a {
+	    float: right;
+	    background: #dcdcdc;
+	    margin-right: -20px;
+	    padding: 5px 10px;
+	    font-size: .8em;
+	    color: #838383;
+	}
+	a.comment-reply-link {
+	    padding: 3px 15px;
+	    color: #fff;
+	    background: $color__primary-accent;;
+	}
+	
+	.reply {
+	    margin: 15px 0px 0;
+	}
 }

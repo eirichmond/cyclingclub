@@ -75,10 +75,11 @@ if ( ! function_exists( 'cyclingclublite_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
+			'height'      => 50,
+			'width'       => 50,
+			'flex-width'  => false,
+			'flex-height' => false,
+			'header-text' => array( 'site-title', 'site-description' ),
 		) );
 	}
 endif;
@@ -165,6 +166,12 @@ require get_template_directory() . '/inc/helper-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/customizers/header-nav-footer.php';
+require get_template_directory() . '/inc/customizers/accent-color.php';
+
+require get_template_directory() . '/inc/customizers/customizer_css.php';
+
+require get_template_directory() . '/inc/customizers/callback_sanitizer.php';
 
 /**
  * Load Jetpack compatibility file.

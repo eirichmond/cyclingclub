@@ -39,3 +39,23 @@ function modify_read_more_link() {
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
+/**
+ * Modifies get_header_image_tag to include a wrapper.
+ */
+function header_image_tag_wrapper($html, $header, $attr) {
+	
+	$html = '<div class="mood-image image-fade-in">'.$html.'</div>';		
+	return $html;
+	
+}
+add_filter( 'get_header_image_tag', 'header_image_tag_wrapper', 10, 3 );
+
+/**
+ * Modifies comment date.
+ */
+function cycleclub_comment_date($date, $d, $comment) {
+	
+	return date('M, Y', strtotime($date));
+
+}
+add_filter( 'get_comment_date', 'cycleclub_comment_date', 10, 3 );

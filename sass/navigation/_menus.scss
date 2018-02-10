@@ -137,13 +137,32 @@
 
 	.nav-previous {
 		float: left;
+		text-align: center;
 		width: 50%;
+		a {
+			display: block;
+			padding: 30px;
+			font-size: 0.8em;
+			transition: .5s all;
+			&:hover {
+				background: #e1e1e1;
+			}
+		}
 	}
 
 	.nav-next {
 		float: right;
-		text-align: right;
+		text-align: center;
 		width: 50%;
+		a {
+			display: block;
+			padding: 30px;
+			font-size: 0.8em;
+			transition: .5s all;
+			&:hover {
+				background: #e1e1e1;
+			}
+		}
 	}
 }
 

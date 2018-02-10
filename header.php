@@ -43,15 +43,13 @@
 				<?php
 				endif; ?>
 			</div><!-- .site-branding -->
-			
-			<?php if ( is_front_page() || is_home() ) { ?>
-				<div class="mood-image image-fade-in">
-					<?php the_header_image_tag(); ?>
-				</div>
+
+			<?php if ( is_front_page() || is_home()) { ?>
+				<?php the_header_image_tag(); ?>
 			<?php } ?>
 			
 			<div class="sticker-wrapper">
-			<nav id="site-navigation" class="main-navigation">
+			<nav id="site-navigation" class="main-navigation accent-background-colour">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'cyclingclublite' ); ?></button>
 				<div class="row">
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu') ); ?>

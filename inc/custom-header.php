@@ -21,8 +21,8 @@ function cyclingclublite_custom_header_setup() {
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1600,
-		'height'                 => 250,
-		'flex-height'            => true,
+		'height'                 => 550,
+		'flex-height'            => false,
 		'wp-head-callback'       => 'cyclingclublite_header_style',
 	) ) );
 }

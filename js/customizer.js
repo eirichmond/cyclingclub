@@ -40,6 +40,16 @@
 		} );
 	} );
 
+	// Header Nav Footer.
+	wp.customize( 'header_background', function( value ) {
+		
+		value.bind( function( to ) {
+			$('.accent-background-colour').css({
+				'background': to
+			});
+		} );
+	} );
+	
 	// Accent color.
 	wp.customize( 'accent_color', function( value ) {
 		
@@ -47,4 +57,6 @@
 
 		} );
 	} );
+	
+	
 } )( jQuery );

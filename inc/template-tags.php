@@ -19,14 +19,14 @@ if ( ! function_exists( 'cyclingclublite_posted_on' ) ) :
 
 		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( 'c' ) ),
-			esc_html( get_the_date() ),
+			esc_html( get_the_date('M, Y') ),
 			esc_attr( get_the_modified_date( 'c' ) ),
 			esc_html( get_the_modified_date() )
 		);
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'cyclingclublite' ),
+			esc_html_x( '%s', 'post date', 'cyclingclublite' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -145,3 +145,63 @@ function cyclingclublite_post_thumbnail() {
 	<?php endif; // End is_singular().
 }
 endif;
+
+
+
+
+/**
+ *
+ *
+ * @todo
+ *
+ *
+ */
+
+function cyclingclub_comments($comment, $args, $depth) {
+
+    if ( 'div' === $args['style'] ) {
+        $tag       = 'div';
+        $add_below = 'comment';
+    } else {
+        $tag       = 'li ';
+        $add_below = 'div-comment';
+    }?>
+    <<?php echo $tag; comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?> id="comment-<?php comment_ID() ?>"><?php 
+    if ( 'div' != $args['style'] ) { ?>
+        <article id="div-comment-<?php comment_ID() ?>" class="comment-body"><?php
+    } ?>
+        <div class="comment-author vcard"><?php 
+            if ( $args['avatar_size'] != 0 ) {
+                echo get_avatar( $comment, $args['avatar_size'] ); 
+            } 
+            printf( __( '<b class="fn">%s</b> <span class="says">says:</span>' ), get_comment_author_link() ); ?>
+        </div><?php 
+        if ( $comment->comment_approved == '0' ) { ?>
+            <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em><br/><?php 
+        } ?>
+        <div class="comment-meta commentmetadata">
+            <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>"><?php echo get_comment_date(); ?></a>
+            <?php edit_comment_link( __( '(Edit)' ), '  ', '' ); ?>
+        </div>
+
+        <?php comment_text(); ?>
+
+        <div class="reply"><?php 
+                comment_reply_link( 
+                    array_merge( 
+                        $args, 
+                        array( 
+                            'add_below' => $add_below, 
+                            'depth'     => $depth, 
+                            'max_depth' => $args['max_depth'] 
+                        ) 
+                    ) 
+                ); ?>
+        </div><?php 
+    if ( 'div' != $args['style'] ) : ?>
+        </article><?php 
+    endif;
+
+}
+
+
