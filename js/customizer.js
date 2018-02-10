@@ -54,7 +54,27 @@
 	wp.customize( 'accent_color', function( value ) {
 		
 		value.bind( function( to ) {
+			var style, el;
 
+            style = '<style type="text/css" class="hover-styles">a:hover { .main-navigation li:hover > a: ' + to + '; }</style>'; // build the style element
+            
+            console.log(style);
+            el =  $( '.hover-styles' ); // look for a matching style element that might already be there
+
+            // add the style element into the DOM or replace the matching style element that is already there
+            if ( el.length ) {
+                el.replaceWith( style ); // style element already exists, so replace it
+            } else {
+                $( 'head' ).append( style ); // style element doesn't exist so add it
+            }
+
+
+			$('.trim-background-color').css({
+				'background': to
+			});
+			
+
+                			
 		} );
 	} );
 	

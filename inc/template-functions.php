@@ -59,3 +59,13 @@ function cycleclub_comment_date($date, $d, $comment) {
 
 }
 add_filter( 'get_comment_date', 'cycleclub_comment_date', 10, 3 );
+
+/**
+ * Add a class to the custom logo hook.
+ */
+function change_logo_class( $html ) {
+    $html = str_replace( 'custom-logo-link', 'custom-logo-link fade-animate-up', $html );
+    return $html;
+}
+add_filter( 'get_custom_logo', 'change_logo_class' );
+

@@ -77,7 +77,7 @@ if ( ! function_exists( 'cyclingclublite_setup' ) ) :
 		add_theme_support( 'custom-logo', array(
 			'height'      => 50,
 			'width'       => 50,
-			'flex-width'  => false,
+			'flex-width'  => true,
 			'flex-height' => false,
 			'header-text' => array( 'site-title', 'site-description' ),
 		) );
