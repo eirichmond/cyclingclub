@@ -1,6 +1,6 @@
 <?php
 
-if ( ! function_exists( 'cyclingclublite_sanitize_hex_color' ) ) {
+if ( ! function_exists( 'cyclingclub_sanitize_hex_color' ) ) {
 	/**
 	 * Sanitize Hex color.
 	 *
@@ -16,7 +16,7 @@ if ( ! function_exists( 'cyclingclublite_sanitize_hex_color' ) ) {
 	 * @return string                          The sanitized Hex color if not null. Otherwise,
 	 *                                         the setting default.
 	 */
-	function cyclingclublite_sanitize_hex_color( $hex_color, $setting ) {
+	function cyclingclub_sanitize_hex_color( $hex_color, $setting ) {
 		// Sanitize $input as a hex value with hash.
 		$hex_color = sanitize_hex_color( $hex_color );
 		// Return hex value or default value.

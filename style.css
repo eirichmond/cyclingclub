@@ -1,14 +1,14 @@
 /*!
-Theme Name: Cycling Club
-Theme URI: http://underscores.me/
+Theme Name: CyclingClub
+Theme URI: https://cyclingclubpro.com
 Author: Elliott Richmond
-Author URI: https://cyclingclubpro.com
+Author URI: https://squareonemd.co.uk
 Description: A Cycling Club Website for Cycling Clubs
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: cyclingclublite
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Text Domain: cyclingclub
+Tags: two-columns, three-columns, right-sidebar, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, footer-widgets, threaded-comments, translation-ready, sticky-post
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1172,7 +1172,7 @@ h1.entry-title {
 
 @media (min-width: 768px) and (max-width: 1223px) {
   .wrap {
-    padding: 20px;
+    padding: 20px 0 60px;
   }
 }
 
@@ -1267,7 +1267,7 @@ h1.entry-title {
 }
 
 .home .entry-header {
-  min-height: 80px;
+  min-height: 60px;
 }
 
 .home .entry-title {
@@ -1277,12 +1277,12 @@ h1.entry-title {
 .home .entry-title {
   text-transform: inherit;
   font-weight: 400;
-  margin: 0px;
+  margin: 20px 0 0;
 }
 
 .home .entry-content {
   position: relative;
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 .home .button {
@@ -1311,13 +1311,14 @@ h1.entry-title {
 }
 
 .home .child-pages .entry-content {
-  min-height: 250px;
+  min-height: 120px;
   position: relative;
-  margin: 0;
+  margin: 0px;
 }
 
 .home .child-pages .entry-content p {
   color: #aaa;
+  margin-bottom: 60px;
 }
 
 .home .child-pages .button {

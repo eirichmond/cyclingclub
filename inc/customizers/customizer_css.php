@@ -1,6 +1,6 @@
 <?php
 	
-function cyclingclublite_customize_css()
+function cyclingclub_customize_css()
 {
     ?>
          <style type="text/css">
@@ -52,4 +52,4 @@ function cyclingclublite_customize_css()
          </style>
     <?php
 }
-add_action( 'wp_head', 'cyclingclublite_customize_css');
+add_action( 'wp_head', 'cyclingclub_customize_css');

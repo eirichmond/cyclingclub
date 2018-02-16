@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package cyclingclublite
+ * @package cyclingclub
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cyclingclublite' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cyclingclub' ); ?></a>
 
 	<header id="masthead" class="site-header accent-background-colour">
 		
@@ -50,7 +50,7 @@
 			
 			<div class="sticker-wrapper">
 			<nav id="site-navigation" class="main-navigation accent-background-colour">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'cyclingclublite' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'cyclingclub' ); ?></button>
 				<div class="row">
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu') ); ?>
 				</div>

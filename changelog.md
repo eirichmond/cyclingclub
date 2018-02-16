@@ -8,3 +8,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.0] - 31-01-2018
 ### Added" > changelog.md
+created first stage theme
