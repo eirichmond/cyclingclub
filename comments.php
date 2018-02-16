@@ -93,7 +93,6 @@ if ( post_password_required() ) {
 	$comment_args = array(
 		'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 		'comment_notes_before' => '<div class="comment-textbox">',
-		'comment_notes_after' => '</div>',
 		'fields' => $fields
 	);
 
