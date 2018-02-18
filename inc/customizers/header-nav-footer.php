@@ -3,7 +3,7 @@
 /**
  * Cycling Club Theme Customizer
  *
- * @package cyclingclub
+ * @package cyclingclublite
  */
 
 /**
@@ -11,7 +11,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function cyclingclub_customize_register_header_nav_footer( $wp_customize ) {
+function cyclingclublite_customize_register_header_nav_footer( $wp_customize ) {
 
 	/*
 	 * This adds a setting in the customiser to change
@@ -27,7 +27,7 @@ function cyclingclub_customize_register_header_nav_footer( $wp_customize ) {
 			'default'    => '#0F1E29',
 			'type'       => 'theme_mod',
 			'capability' => 'edit_theme_options',
-			'sanitize_callback' => 'cyclingclub_sanitize_hex_color',
+			'sanitize_callback' => 'cyclingclublite_sanitize_hex_color',
 			'transport'  => 'postMessage',
 		) 
 	);      
@@ -35,7 +35,7 @@ function cyclingclub_customize_register_header_nav_footer( $wp_customize ) {
 	// define the colour control for the accent colour
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_background',
 		array(
-			'label'      => __( 'Header, Nav, Footer Background', 'cyclingclub' ),
+			'label'      => __( 'Header, Nav, Footer Background', 'cyclingclublite' ),
 			'priority'   => 10,
 			'section'    => 'colors',
 		)
@@ -45,4 +45,4 @@ function cyclingclub_customize_register_header_nav_footer( $wp_customize ) {
 	$wp_customize->get_setting( 'header_background' )->transport = 'postMessage';
 
 }
-add_action( 'customize_register', 'cyclingclub_customize_register_header_nav_footer' );
+add_action( 'customize_register', 'cyclingclublite_customize_register_header_nav_footer' );

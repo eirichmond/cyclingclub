@@ -1,16 +1,16 @@
 <?php
 	
-function cyclingclub_customize_css()
+function cyclingclublite_customize_css()
 {
     ?>
          <style type="text/css">
 	         .accent-background-colour {
-		         background: <?php echo get_theme_mod( 'header_background' ); ?>;
+		         background: <?php wp_kses( get_theme_mod( 'header_background' ) ) ; ?>;
 	         }
 			.trim-background-color,
 			.main-navigation li:hover > a,
 			.button:hover {
-			    background: <?php echo get_theme_mod( 'accent_color' ); ?>;
+			    background: <?php wp_kses( get_theme_mod( 'accent_color' ) ) ; ?>;
 			}
 			.main-navigation li:hover > a,
 			.button:hover,
@@ -19,15 +19,15 @@ function cyclingclub_customize_css()
 			#comments input[type="button"],
 			#comments input[type="reset"],
 			#comments input[type="submit"] {
-				background:<?php echo get_theme_mod( 'accent_color' ); ?>;	 
+				background:<?php wp_kses( get_theme_mod( 'accent_color' ) ) ; ?>;	 
 			}
 			#footer-menu li a:hover,
 			.site-info a,
 			a {
-				color:<?php echo get_theme_mod( 'accent_color' ); ?>;	 
+				color:<?php wp_kses( get_theme_mod( 'accent_color' ) ); ?>;	 
 			}
 			#footer-menu {
-				border-bottom-color:<?php echo get_theme_mod( 'accent_color' ); ?>;
+				border-bottom-color:<?php wp_kses( get_theme_mod( 'accent_color' ) ); ?>;
 			}
 			article,
 			input[type="text"],
@@ -47,9 +47,9 @@ function cyclingclub_customize_css()
 			input[type="color"],
 			extarea,
 			#secondary .widget  {
-				border-left-color:<?php echo get_theme_mod( 'accent_color' ); ?>;
+				border-left-color:<?php wp_kses( get_theme_mod( 'accent_color' )); ?>;
 			}
          </style>
     <?php
 }
-add_action( 'wp_head', 'cyclingclub_customize_css');
+add_action( 'wp_head', 'cyclingclublite_customize_css');

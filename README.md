@@ -1,2 +1,2 @@
-# cyclingclubtheme
+# cyclingclublitetheme
 cycling club theme

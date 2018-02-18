@@ -75,6 +75,11 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
+#: inc/template-tags.php:29
+#. translators: post date
+msgid "post date"
+msgstr ""
+
 #: inc/template-tags.php:52
 #. translators: used between list items, there is a space after the comma
 msgid ", "
@@ -170,7 +175,7 @@ msgstr[1] ""
 #: inc/template-tags.php:29
 #. translators: %s: post date.
 msgctxt "post date"
-msgid "Posted on %s"
+msgid "%s"
 msgstr ""
 
 #: inc/template-tags.php:35

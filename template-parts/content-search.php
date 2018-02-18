@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package cyclingclub
+ * @package cyclingclublite
  */
 
 ?>
@@ -16,20 +16,20 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta trim-border-bottom">
 			<?php
-				cyclingclub_posted_on();
-				cyclingclub_posted_by();
+				cyclingclublite_posted_on();
+				cyclingclublite_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php cyclingclub_post_thumbnail(); ?>
+	<?php cyclingclublite_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php cyclingclub_entry_footer(); ?>
+		<?php cyclingclublite_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

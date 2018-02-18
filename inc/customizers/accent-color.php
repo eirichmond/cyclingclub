@@ -3,7 +3,7 @@
 /**
  * Cycling Club Theme Customizer
  *
- * @package cyclingclub
+ * @package cyclingclublite
  */
 
 /**
@@ -11,7 +11,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function cyclingclub_customize_register_accent_color( $wp_customize ) {
+function cyclingclublite_customize_register_accent_color( $wp_customize ) {
 
 	/*
 	 * This adds a setting in the customiser to change
@@ -27,7 +27,7 @@ function cyclingclub_customize_register_accent_color( $wp_customize ) {
 			'default'    => '#68B1DF',
 			'type'       => 'theme_mod',
 			'capability' => 'edit_theme_options',
-			'sanitize_callback' => 'cyclingclub_sanitize_hex_color',
+			'sanitize_callback' => 'cyclingclublite_sanitize_hex_color',
 			'transport'  => 'postMessage',
 		) 
 	);      
@@ -35,7 +35,7 @@ function cyclingclub_customize_register_accent_color( $wp_customize ) {
 	// define the colour control for the accent colour
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'accent_color',
 		array(
-			'label'      => __( 'Accent Color', 'cyclingclub' ),
+			'label'      => __( 'Accent Color', 'cyclingclublite' ),
 			'priority'   => 10,
 			'section'    => 'colors',
 		)
@@ -45,4 +45,4 @@ function cyclingclub_customize_register_accent_color( $wp_customize ) {
 	$wp_customize->get_setting( 'accent_color' )->transport = 'postMessage';
 
 }
-add_action( 'customize_register', 'cyclingclub_customize_register_accent_color' );
+add_action( 'customize_register', 'cyclingclublite_customize_register_accent_color' );
