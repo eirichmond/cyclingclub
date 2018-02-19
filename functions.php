@@ -23,6 +23,8 @@ if ( ! function_exists( 'cyclingclublite_setup' ) ) :
 		 * to change 'cyclingclublite' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'cyclingclublite', get_template_directory() . '/languages' );
+		
+		add_editor_style( array('assets/editor-style.css') );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -81,6 +83,8 @@ if ( ! function_exists( 'cyclingclublite_setup' ) ) :
 			'flex-height' => false,
 			'header-text' => array( 'site-title', 'site-description' ),
 		) );
+		
+
 	}
 endif;
 add_action( 'after_setup_theme', 'cyclingclublite_setup' );
