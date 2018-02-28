@@ -26,7 +26,6 @@
 
 	<header id="masthead" class="site-header accent-background-colour">
 		
-
 			<div class="site-branding">
 				<?php
 				the_custom_logo();
@@ -42,6 +41,9 @@
 					<p class="site-description fade-animate-up"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 				<?php
 				endif; ?>
+				
+				<?php do_action( 'cyclingpro_login' ); ?>
+				
 			</div><!-- .site-branding -->
 
 			<?php if ( is_front_page() || is_home()) { ?>
