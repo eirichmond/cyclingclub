@@ -21,7 +21,9 @@
 		
 		<p><?php echo esc_html(get_child_page_content()) ;?></p>
 		
-		<a class="button" href="<?php echo esc_url( get_permalink() ) ;?>">Read more...</a>
+		<p>
+			<a class="button" href="<?php echo esc_url( get_permalink() ) ;?>">Read more...</a>
+		</p>
 		
 	</div><!-- .entry-content -->
 
