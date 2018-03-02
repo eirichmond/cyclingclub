@@ -5,7 +5,7 @@ function cyclingclublite_customize_css()
     ?>
          <style type="text/css">
 	         .accent-background-colour {
-		         background: <?php wp_kses( get_theme_mod( 'header_background' ) ) ; ?>;
+		         background: <?php get_theme_mod( 'header_background' ) ; ?>;
 	         }
 			.trim-background-color,
 			.main-navigation li:hover > a,

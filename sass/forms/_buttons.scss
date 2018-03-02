@@ -19,6 +19,45 @@ input[type="submit"] {
 	}
 }
 
+
+
+/**
+	primary button
+**/
+
+.btn {
+	padding: 8px 13px;
+    border-radius: 5px;
+    min-width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn--primary {
+    background-color: #0F1E29;
+    color: #fff;
+    font-size: 0.9em;
+    transition: all 0.5s ease-out;
+}
+
+.btn--primary:hover, .btn--primary.inverted:hover {
+    background-color: #307bad;
+    color: #fff;
+}
+
+.btn--primary.inverted {
+    background: #68B1DF;
+}
+
+
+
+
+
+
+
+
+/*
+
 .button {
 	display: inline-block;
 	border: 2px solid;
@@ -54,3 +93,4 @@ input[type="submit"] {
 .dark {
     background: $color__primary-dark;
 }
+*/

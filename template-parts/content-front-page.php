@@ -26,6 +26,8 @@
 				'after'  => '</div>',
 			) );
 		?>
+		<a class="btn btn--primary large" href="#">Primary Button Large</a>
+
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>

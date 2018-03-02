@@ -1,8 +1,13 @@
 /*!
+<<<<<<< HEAD
 Theme Name: CyclingClubLite
 Theme URI: https://cyclingclubpro.com/
+=======
+Theme Name: Cycling Club
+Theme URI: https://cyclingclublitepro.com
+>>>>>>> 731d8e7a5d1760a1516644ba717c41694e8b4e45
 Author: Elliott Richmond
-Author URI: https://squareonemd.co.uk
+Author URI: https://cyclingclublitepro.com
 Description: A Cycling Club Website for Cycling Clubs
 Version: 1.0.2
 License: GNU General Public License v2 or later
@@ -476,46 +481,71 @@ input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
 }
 
-.button {
+/**
+	primary button
+**/
+.btn {
+  padding: 8px 13px;
+  border-radius: 5px;
+  min-width: 100px;
   display: inline-block;
-  border: 2px solid;
-  border-color: #fff;
-  background: transparent;
-  color: #fff;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1;
-  padding: .5em 1em;
-  font-family: "Open Sans", "san-serif";
-  transition: all 0.5s ease;
-  margin-top: 20px;
+  text-align: center;
 }
 
-.button:hover {
-  border-color: #ccc #bbb #aaa;
+.btn--primary {
+  background-color: #0F1E29;
   color: #fff;
+  font-size: 0.9em;
+  transition: all 0.5s ease-out;
+}
+
+.btn--primary:hover, .btn--primary.inverted:hover {
+  background-color: #307bad;
+  color: #fff;
+}
+
+.btn--primary.inverted {
   background: #68B1DF;
 }
 
-.button:active, .button:focus {
-  border-color: #aaa #bbb #bbb;
-}
+/*
 
-.button:hover {
-  border-color: #0F1E29;
+.button {
+	display: inline-block;
+	border: 2px solid;
+	border-color: #fff;
+	background: $color__background-button;
+	color: #fff;
+	@include font-size(1);
+	line-height: 1;
+	padding: .5em 1em;
+	font-family: $font__main;
+	transition: all 0.5s ease;
+	&:hover {
+		border-color: $color__border-button-hover;
+		color: #fff;
+		background: $color__primary-accent;
+	}
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+	margin-top: 20px;
+	&:hover {
+		border-color:$color__primary-dark;
+	}
 }
-
 .large {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1.2em;
-  padding: 1em 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 1em 2em;
 }
 
 .dark {
-  background: #0F1E29;
+    background: $color__primary-dark;
 }
-
+*/
 input[type="text"],
 input[type="email"],
 input[type="url"],
