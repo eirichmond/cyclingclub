@@ -31,7 +31,7 @@
 			?></a>
 			<span class="sep"> | </span>
 			
-			<a href="<?php echo esc_url( __( 'https://cyclingclublitepro.com/', 'cyclingclublite' ) ); ?>"><?php
+			<a href="<?php echo esc_url( __( 'https://cyclingclubpro.com/', 'cyclingclublite' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Theme by %s', 'cyclingclublite' ), 'Cycling Club Pro' );
 			?></a>

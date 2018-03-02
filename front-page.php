@@ -31,7 +31,7 @@ get_header(); ?>
 	</div>
 </div>
 	
-<?php $child_pages = get_all_child_pages($post->ID); ?>
+<?php $child_pages = cyclingclublite_get_all_child_pages($post->ID); ?>
 	
 	<div class="wrap accent-background-colour">
 	

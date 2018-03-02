@@ -1,11 +1,11 @@
 === Cycling Club ===
 
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Contributors: Elliott Richmond
+Tags: two-columns, custom-colors, footer-widgets
 
-Requires at least: 4.0
-Tested up to: 4.8
-Stable tag: 1.0.0
+Requires at least: 4.9
+Tested up to: 4.9
+Stable tag: 1.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -29,10 +29,12 @@ Cycling Club includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0 - Feb 19 2018 =
 * Initial release
 
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+* screenshot uses an image from https://pixabay.com/ All contents are released under Creative Commons CC0, which makes them safe to use without asking for permission or giving credit to the artist - even for commercial purposes.
+
