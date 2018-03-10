@@ -22,7 +22,7 @@
 		<p><?php echo esc_html(get_child_page_content()) ;?></p>
 		
 		<p>
-			<a class="button" href="<?php echo esc_url( get_permalink() ) ;?>">Read more...</a>
+			<a class="btn btn--primary inverted" href="<?php echo esc_url( get_permalink() ) ;?>">Read more...</a>
 		</p>
 		
 	</div><!-- .entry-content -->

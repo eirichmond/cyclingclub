@@ -84,6 +84,8 @@ if ( ! function_exists( 'cyclingclublite_setup' ) ) :
 			'header-text' => array( 'site-title', 'site-description' ),
 		) );
 		
+		
+		
 
 	}
 endif;
@@ -139,6 +141,7 @@ function cyclingclublite_scripts() {
 
 	wp_enqueue_script( 'cyclingclublite-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'cyclingclublite-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'cyclingclublite-fontawesome', get_template_directory_uri() . '/js/fontawesome-all.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -176,6 +179,8 @@ require get_template_directory() . '/inc/customizers/accent-color.php';
 require get_template_directory() . '/inc/customizers/customizer_css.php';
 
 require get_template_directory() . '/inc/customizers/callback_sanitizer.php';
+
+require get_template_directory() . '/inc/shortcodes.php';
 
 /**
  * Load Jetpack compatibility file.
