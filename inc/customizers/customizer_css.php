@@ -1,6 +1,6 @@
 <?php
 	
-function cyclingclublite_customize_css() {
+function cyclingclubcustomize_css() {
 	
     ?>
          <style type="text/css">
@@ -44,11 +44,11 @@ function cyclingclublite_customize_css() {
 			input[type="datetime"],
 			input[type="datetime-local"],
 			input[type="color"],
-			extarea,
+			textarea,
 			#secondary .widget  {
 				border-left-color:<?php echo get_theme_mod( 'accent_color' ); ?>;
 			}
          </style>
     <?php
 }
-add_action( 'wp_head', 'cyclingclublite_customize_css');
+add_action( 'wp_head', 'cyclingclubcustomize_css');
