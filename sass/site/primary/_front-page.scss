@@ -36,7 +36,7 @@
 		margin: 0;
 	}
 	#front-page a {
-		color: darken($color__primary-accent, 50%);
+		//color: darken($color__primary-accent, 50%);
 		transition: all 0.5s ease;
 		&:hover {
 			color: lighten($color__primary-accent, 50%);

@@ -1,1 +1,0 @@
-Primary button inverted style

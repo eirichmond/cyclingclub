@@ -22,10 +22,11 @@ input[type="submit"] {
 
 
 /**
-	primary button
+	primary button 
+	@TODO refactor colours to use variables
 **/
 
-.btn {
+a.btn {
 	padding: 8px 13px;
     border-radius: 5px;
     min-width: 100px;
@@ -33,20 +34,33 @@ input[type="submit"] {
     text-align: center;
 }
 
-.btn--primary {
+a.btn--primary {
     background-color: #0F1E29;
     color: #fff;
     font-size: 0.9em;
     transition: all 0.5s ease-out;
+    &.large {
+	    font-size: 1.3em;
+	}
 }
 
-.btn--primary:hover, .btn--primary.inverted:hover {
+a.btn--primary:hover, .btn--primary.inverted:hover {
     background-color: #307bad;
     color: #fff;
 }
 
-.btn--primary.inverted {
+a.btn--primary.inverted {
     background: #68B1DF;
+}
+
+a.btn--primary.inverted.inactive {
+    background: #fff;
+    border: 1px solid #68B1DF;
+    color: #68B1DF;
+    &:hover {
+    	background: #68B1DF;
+    	color: #fff;
+    }
 }
 
 

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package cyclingclublite
+ * @package cyclingclub
  */
 
 ?>
@@ -25,15 +25,15 @@
 			
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => 'footer-menu', ) ); ?>
 			
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cyclingclublite' ) ); ?>"><?php
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cyclingclub' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'cyclingclublite' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'cyclingclub' ), 'WordPress' );
 			?></a>
 			<span class="sep"> | </span>
 			
-			<a href="<?php echo esc_url( __( 'https://cyclingclubpro.com/', 'cyclingclublite' ) ); ?>"><?php
+			<a href="<?php echo esc_url( __( 'https://cyclingclubpro.com/', 'cyclingclub' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Theme by %s', 'cyclingclublite' ), 'Cycling Club Pro' );
+				printf( esc_html__( 'Theme by %s', 'cyclingclub' ), 'Cycling Club Pro' );
 			?></a>
 			
 		</div><!-- .site-info -->

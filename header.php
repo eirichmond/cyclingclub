@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package cyclingclublite
+ * @package cyclingclub
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cyclingclublite' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cyclingclub' ); ?></a>
 
 	<header id="masthead" class="site-header accent-background-colour">
 		
@@ -38,7 +38,7 @@
 	
 				$description = get_bloginfo( 'description', 'display' );
 				if ( $description || is_customize_preview() ) : ?>
-					<p class="site-description fade-animate-up"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+					<p class="site-description fade-animate-up"><?php echo esc_html( $description ); ?></p>
 				<?php
 				endif; ?>
 				
@@ -52,7 +52,7 @@
 			
 			<div class="sticker-wrapper">
 			<nav id="site-navigation" class="main-navigation accent-background-colour">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'cyclingclublite' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'cyclingclub' ); ?></button>
 				<div class="row">
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu') ); ?>
 				</div>

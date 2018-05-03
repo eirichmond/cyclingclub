@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package cyclingclublite
+ * @package cyclingclub
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function cyclingclublite_jetpack_setup() {
+function cyclingclubjetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'cyclingclublite_infinite_scroll_render',
+		'render'    => 'cyclingclubinfinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function cyclingclublite_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'cyclingclublite-style',
+			'stylesheet' => 'cyclingclub-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -42,12 +42,12 @@ function cyclingclublite_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'cyclingclublite_jetpack_setup' );
+add_action( 'after_setup_theme', 'cyclingclubjetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function cyclingclublite_infinite_scroll_render() {
+function cyclingclubinfinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
