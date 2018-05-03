@@ -149,7 +149,7 @@ function cyclingclubpost_thumbnail() {
 endif;
 
 
-function get_child_page_content() {
+function cyclingclub_get_child_page_content() {
 	
 	$content = wp_trim_words( get_the_content(), 40, '&hellip;' );
 	return $content;		

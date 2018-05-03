@@ -21,7 +21,7 @@ Check your theme readme file. Is `Contributors: automatic`?
 Mentioned the license of every external source used on the theme like image, JS, CSS etc. It is missing in readme file.
 Remove layouts folder, it is not used on the theme.
 Make your own pot file. You have default pot file.
-Function name, global variables, image size name etc need to be prefixed with theme slug. It is missing. `get_all_child_pages()`.
+Function name, global variables, image size name etc need to be prefixed with theme slug. It is missing. `cyclingclub_get_all_child_pages()`.
 http://themereview.co/prefix-all-the-things/
 Remove development files from the theme.
 
@@ -39,3 +39,14 @@ header.php line 42, $description
 template-functions.php line 38, Read more...
 ### Copyrigt and licence
 all rights and licences referenced
+
+## [1.0.3] - 03-05-2018
+### Code issues
+Remove MACOSX dir
+use `wp_enqueue_script( 'font-awesome', ---)` instead of `wp_enqueue_script( 'cyclingclub-fontawesome', ---)`
+admin check added for `modify_read_more_link()`
+prefix added to various functions
+### Translation Missing
+Read more.. static string translation
+### Copyrigt and licence
+more rights and licences references added

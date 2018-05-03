@@ -19,10 +19,10 @@
 
 	<div class="entry-content">
 		
-		<p><?php echo esc_html(get_child_page_content()) ;?></p>
+		<p><?php echo esc_html(cyclingclub_get_child_page_content()) ;?></p>
 		
 		<p>
-			<a class="btn btn--primary inverted" href="<?php echo esc_url( get_permalink() ) ;?>">Read more...</a>
+			<a class="btn btn--primary inverted" href="<?php echo esc_url( get_permalink() ) ;?>"><?php esc_html_e( 'Read more...', 'cyclingclub' ); ?></a>
 		</p>
 		
 	</div><!-- .entry-content -->

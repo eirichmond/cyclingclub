@@ -3,8 +3,8 @@
 **Contributors:** erichmond  
 **Requires at least:** WordPress 4.9.5  
 **Tested up to:** WordPress 4.9.5  
-**Stable tag:** 1.0.3 
-**Version:** 1.0.3
+**Stable tag:** 1.0.4 
+**Version:** 1.0.4
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 **Tags:** two-columns, three-columns, right-sidebar, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, footer-widgets, threaded-comments, translation-ready, blog, sticky-post
@@ -50,9 +50,14 @@ Screenshot featured header image, Copyright Pixabay
 **License:** CC0 1.0 Universal (CC0 1.0) 
 Source: https://pixabay.com/en/people-man-woman-bike-bicycle-2597767/
 
+Font Awesome Free
+**License:** CC BY 4.0 License
+Source: https://creativecommons.org/licenses/by/4.0/
+
 ## Changelog
 
 ### 1.0
 * Released:TBC
 
 Initial release
+
