@@ -11,7 +11,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function cyclingclubcustomize_register_header_nav_footer( $wp_customize ) {
+function cyclingclub_customize_register_header_nav_footer( $wp_customize ) {
 
 	/*
 	 * This adds a setting in the customiser to change
@@ -45,4 +45,4 @@ function cyclingclubcustomize_register_header_nav_footer( $wp_customize ) {
 	$wp_customize->get_setting( 'header_background' )->transport = 'postMessage';
 
 }
-add_action( 'customize_register', 'cyclingclubcustomize_register_header_nav_footer' );
+add_action( 'customize_register', 'cyclingclub_customize_register_header_nav_footer' );

@@ -30,7 +30,7 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php cyclingclubpost_thumbnail(); ?>
+	<?php cyclingclub_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php

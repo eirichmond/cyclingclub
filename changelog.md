@@ -50,3 +50,15 @@ prefix added to various functions
 Read more.. static string translation
 ### Copyrigt and licence
 more rights and licences references added
+
+## [1.0.5] - 08-05-2018
+### Code issues
+use `wp_enqueue_script( 'font-awesome', ---)` instead of `wp_enqueue_script( 'cyclingclub-fontawesome', ---)`
+removed parameters from the function `get_the_date()`
+
+## [1.0.6] - 25-05-2018
+### Code issues
+use of function prefix changed
+removed alt tags on post thumbnail image function
+default image set
+screenshot images changed

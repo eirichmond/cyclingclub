@@ -15,7 +15,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php cyclingclubpost_thumbnail(); ?>
+	<?php cyclingclub_post_thumbnail(); ?>
 
 	<div id="front-page" class="entry-content">
 		<?php

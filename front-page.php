@@ -31,20 +31,22 @@ get_header(); ?>
 	</div>
 </div>
 	
-<?php $child_pages = cyclingclublite_cyclingclub_get_all_child_pages($post->ID); ?>
+<?php $child_pages = cyclingclub_get_all_child_pages($post->ID); ?>
 	
-	<div class="wrap accent-background-colour">
-	
-		<div class="row thirds-grid-container">
-	
-			<?php foreach( $child_pages as $post ) : setup_postdata($post);
-				
-				get_template_part( 'template-parts/content', 'child-page' );
-				
-			endforeach;  wp_reset_postdata(); ?>
+	<?php if ($child_pages) { ?>
+		<div class="wrap accent-background-colour">
+		
+			<div class="row thirds-grid-container">
+		
+				<?php foreach( $child_pages as $post ) : setup_postdata($post);
+					
+					get_template_part( 'template-parts/content', 'child-page' );
+					
+				endforeach;  wp_reset_postdata(); ?>
+			
+			</div>
 		
 		</div>
+	<?php } ?>
 	
-	</div>
-
 <?php get_footer(); ?>

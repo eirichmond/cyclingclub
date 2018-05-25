@@ -10,7 +10,7 @@
  * @param   $post_id      $post->ID the post id of the parent page, this will return all child pages of that parent
  * @return  $child_pages
  */
-function cyclingclublite_cyclingclub_get_all_child_pages($post_id) {
+function cyclingclub_get_all_child_pages($post_id) {
 	
 	// Set up the objects needed
 	$my_wp_query = new WP_Query();

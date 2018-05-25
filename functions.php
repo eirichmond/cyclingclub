@@ -7,7 +7,7 @@
  * @package cyclingclub
  */
 
-if ( ! function_exists( 'cyclingclubsetup' ) ) :
+if ( ! function_exists( 'cyclingclub_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,7 +15,7 @@ if ( ! function_exists( 'cyclingclubsetup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function cyclingclubsetup() {
+	function cyclingclub_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -89,7 +89,7 @@ if ( ! function_exists( 'cyclingclubsetup' ) ) :
 
 	}
 endif;
-add_action( 'after_setup_theme', 'cyclingclubsetup' );
+add_action( 'after_setup_theme', 'cyclingclub_setup' );
 
 
 
@@ -100,17 +100,17 @@ add_action( 'after_setup_theme', 'cyclingclubsetup' );
  *
  * @global int $content_width
  */
-function cyclingclubcontent_width() {
-	$GLOBALS['content_width'] = apply_filters( 'cyclingclubcontent_width', 640 );
+function cyclingclub_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'cyclingclub_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'cyclingclubcontent_width', 0 );
+add_action( 'after_setup_theme', 'cyclingclub_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function cyclingclubwidgets_init() {
+function cyclingclub_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'cyclingclub' ),
 		'id'            => 'sidebar-1',
@@ -131,23 +131,23 @@ function cyclingclubwidgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'cyclingclubwidgets_init' );
+add_action( 'widgets_init', 'cyclingclub_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function cyclingclubscripts() {
+function cyclingclub_scripts() {
 	wp_enqueue_style( 'cyclingclub-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'cyclingclub-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'cyclingclub-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/js/fontawesome-all.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'font-awesome', get_template_directory_uri() . '/js/fontawesome-all.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'cyclingclubscripts' );
+add_action( 'wp_enqueue_scripts', 'cyclingclub_scripts' );
 
 /**
  * Implement the Custom Header feature.

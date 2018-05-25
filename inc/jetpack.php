@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function cyclingclubjetpack_setup() {
+function cyclingclub_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'cyclingclubinfinite_scroll_render',
+		'render'    => 'cyclingclub_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -42,12 +42,12 @@ function cyclingclubjetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'cyclingclubjetpack_setup' );
+add_action( 'after_setup_theme', 'cyclingclub_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function cyclingclubinfinite_scroll_render() {
+function cyclingclub_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

@@ -14,27 +14,34 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses cyclingclubheader_style()
+ * @uses cyclingclub_header_style()
  */
-function cyclingclubcustom_header_setup() {
+function cyclingclub_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'cyclingclubcustom_header_args', array(
-		'default-image'          => '',
+		'default-image'          => get_parent_theme_file_uri( '/assets/images/cropped-cycling.jpg' ),
 		'default-text-color'     => '000000',
 		'width'                  => 1600,
 		'height'                 => 550,
 		'flex-height'            => false,
-		'wp-head-callback'       => 'cyclingclubheader_style',
+		'wp-head-callback'       => 'cyclingclub_header_style',
 	) ) );
+	register_default_headers( array(
+		'default-image' => array(
+			'url'           => '%s/assets/images/cropped-cycling.jpg',
+			'thumbnail_url' => '%s/assets/images/cropped-cycling.jpg',
+			'description'   => __( 'Default Header Image', 'cyclingclub' ),
+		),
+	) );
 }
-add_action( 'after_setup_theme', 'cyclingclubcustom_header_setup' );
+add_action( 'after_setup_theme', 'cyclingclub_custom_header_setup' );
 
-if ( ! function_exists( 'cyclingclubheader_style' ) ) :
+if ( ! function_exists( 'cyclingclub_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
 	 * @see cyclingclubcustom_header_setup().
 	 */
-	function cyclingclubheader_style() {
+	function cyclingclub_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
