@@ -1,0 +1,1 @@
+zip -r cyclingclub.zip cyclingclub -x "*node_modules*" -x "*.DS_Store" -x "*phpcs.xml.dist" -x "*.git*" -x "*.gitignore" -x "*visuals.sketch"
