@@ -62,3 +62,7 @@ use of function prefix changed
 removed alt tags on post thumbnail image function
 default image set
 screenshot images changed
+
+## [1.0.7] - 01-06-2018
+### Code issues
+Bug in use of function naming for comments

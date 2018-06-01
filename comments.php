@@ -51,7 +51,7 @@ if ( post_password_required() ) {
 			
 			<?php
 				wp_list_comments( array(
-					'callback' => 'cyclingclubcomments',
+					'callback' => 'cyclingclub_comments',
 					'style'      => 'ol',
 					'short_ping' => true,
 				) );
