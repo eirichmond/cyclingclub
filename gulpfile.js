@@ -19,7 +19,7 @@ gulp.task('sass', function(){
 
 gulp.task('browserSync', function() {
   browserSync.init({
-      proxy: 'dev.cyclingclub.local', // or project.dev/app/
+      proxy: 'dev.cyclingclubpro.local', // or project.dev/app/
   })
 });
 

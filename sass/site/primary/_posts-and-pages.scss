@@ -55,4 +55,8 @@ a.post-edit-link {
 .edit-link {
     margin: 15px 0px;
     line-height: 5;
+    a {
+	    border-radius: 3px;
+	    background: $color__primary-accent;
+    }
 }

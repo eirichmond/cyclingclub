@@ -27,7 +27,7 @@ function cyclingclub_customize_register_accent_color( $wp_customize ) {
 			'default'    => '#68B1DF',
 			'type'       => 'theme_mod',
 			'capability' => 'edit_theme_options',
-			'sanitize_callback' => 'cyclingclubsanitize_hex_color',
+			'sanitize_callback' => 'cyclingclub_sanitize_hex_color',
 			'transport'  => 'postMessage',
 		) 
 	);      

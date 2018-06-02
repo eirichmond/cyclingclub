@@ -27,7 +27,7 @@ function cyclingclub_customize_register_header_nav_footer( $wp_customize ) {
 			'default'    => '#0F1E29',
 			'type'       => 'theme_mod',
 			'capability' => 'edit_theme_options',
-			'sanitize_callback' => 'cyclingclubsanitize_hex_color',
+			'sanitize_callback' => 'cyclingclub_sanitize_hex_color',
 			'transport'  => 'postMessage',
 		) 
 	);      

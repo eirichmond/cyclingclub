@@ -66,3 +66,7 @@ screenshot images changed
 ## [1.0.7] - 01-06-2018
 ### Code issues
 Bug in use of function naming for comments
+
+## [1.0.8] - 02-06-2018
+### Code issues
+Bug in use of function naming for customizer

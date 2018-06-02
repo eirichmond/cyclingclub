@@ -187,3 +187,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_filter( 'ccpl_number_of_child_page_columns', 'myfunc', 10 );
+function myfunc() {
+	return 2;
+}
+
+
