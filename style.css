@@ -2,7 +2,7 @@
 Theme Name: CyclingClub
 Theme URI: https://cyclingclubpro.com
 Author: Elliott Richmond
-Author URI: https://cyclingclubpro.com
+Author URI: https://squareonemd.co.uk
 Description: A Cycling Club Website for Cycling Clubs
 Version: 1.0.7
 License: GNU General Public License v2 or later
@@ -272,7 +272,7 @@ select,
 optgroup,
 textarea {
   color: #838383;
-  font-family: "Open Sans", "san-serif";
+  font-family: "Open Sans", "sans-serif";
   font-weight: 100;
   font-size: 16px;
   font-size: 1rem;
@@ -280,7 +280,7 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", "san-serif";
+  font-family: "Open Sans", "sans-serif";
   clear: both;
   text-transform: uppercase;
 }
@@ -438,7 +438,7 @@ blockquote p {
   font-style: italic;
   font-size: 1em;
   color: #989c9c;
-  font-family: "Open Sans", "san-serif";
+  font-family: "Open Sans", "sans-serif";
 }
 
 /*--------------------------------------------------------------
@@ -456,7 +456,7 @@ input[type="submit"] {
   font-size: 1rem;
   line-height: 1;
   padding: .5em 1em;
-  font-family: "Open Sans", "san-serif";
+  font-family: "Open Sans", "sans-serif";
 }
 
 button:hover,
@@ -707,7 +707,7 @@ a:hover, a:active {
   color: #fff;
   background: transparent;
   padding: 11px;
-  font-family: "Open Sans", "san-serif";
+  font-family: "Open Sans", "sans-serif";
   font-size: 13px;
   transition: all 0.5s ease;
 }
@@ -959,16 +959,18 @@ a:hover, a:active {
   margin: 0;
   border-radius: 0;
   display: inline;
-  border: 3px solid #fff;
+  border: 3px solid #67b1e0;
   padding: 3px 9px;
 }
 
 .widget_search input[type="submit"] {
   margin: 0;
   display: inline;
-  border: 3px solid #fff;
+  border: 3px solid #67b1e0;
   padding: 7px 15px;
   transition: .5s all;
+  color: #ffffff;
+  background: #67b1e0;
 }
 
 .widget_search input[type="submit"]:hover {
@@ -1162,7 +1164,7 @@ h1.site-title {
 }
 
 h1.site-title, p.site-title {
-  font-family: "Open Sans", "san-serif";
+  font-family: "Open Sans", "sans-serif";
   clear: both;
   text-transform: uppercase;
   font-weight: bolder;
