@@ -450,7 +450,7 @@ input[type="reset"],
 input[type="submit"] {
   border: 2px solid;
   border-color: #fff;
-  background: transparent;
+  background: #68B1DF;
   color: #fff;
   font-size: 16px;
   font-size: 1rem;

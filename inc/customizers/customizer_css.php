@@ -18,7 +18,8 @@ function cyclingclub_customize_css() {
 			#comments button,
 			#comments input[type="button"],
 			#comments input[type="reset"],
-			#comments input[type="submit"] {
+			#comments input[type="submit"],
+			button, html input[type="button"], input[type="reset"], input[type="submit"] {
 				background:<?php echo get_theme_mod( 'accent_color' ); ?>;	 
 			}
 			#footer-menu li a:hover,
@@ -48,6 +49,7 @@ function cyclingclub_customize_css() {
 			#secondary .widget  {
 				border-left-color:<?php echo get_theme_mod( 'accent_color' ); ?>;
 			}
+			
          </style>
     <?php
 }

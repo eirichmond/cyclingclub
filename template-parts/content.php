@@ -22,8 +22,8 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta trim-border-bottom">
 			<?php
-				cyclingclubposted_on();
-				cyclingclubposted_by();
+				cyclingclub_posted_on();
+				cyclingclub_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php
@@ -55,7 +55,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php cyclingclubentry_footer(); ?>
+		<?php cyclingclub_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 		
 </article><!-- #post-<?php the_ID(); ?> -->
