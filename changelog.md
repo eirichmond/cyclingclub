@@ -76,3 +76,7 @@ Bug in use of function naming for customizer
 sans-serif corrected
 ### search widget
 fix styling of search widget so in keeping with the default design
+
+## [1.1.0] - 30-11-2018
+### css button style
+correct transparent to accent color

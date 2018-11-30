@@ -4,8 +4,8 @@ Contributors: Elliott Richmond
 Tags: two-columns, custom-colors, footer-widgets
 
 Requires at least: 4.9
-Tested up to: 4.9
-Stable tag: 1.0.2
+Tested up to: 4.9.8
+Stable tag: 1.1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -73,6 +73,20 @@ screenshot images changed
 = [1.0.7] - 01-06-2018 =
 ### Code issues
 Bug in use of function naming for comments
+
+## [1.0.8] - 02-06-2018
+### Code issues
+Bug in use of function naming for customizer
+
+## [1.0.9] - 06-06-2018
+### css font reference spelling
+sans-serif corrected
+### search widget
+fix styling of search widget so in keeping with the default design
+
+## [1.1.0] - 30-11-2018
+### css button style
+correct transparent to accent color
 
 == Credits ==
 
