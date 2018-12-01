@@ -820,6 +820,10 @@ a:hover, a:active {
   border-bottom: 1px solid #68B1DF;
 }
 
+#footer-menu ul {
+  padding: 0px;
+}
+
 #footer-menu li {
   display: inline;
   content: '';
@@ -1190,6 +1194,10 @@ p.site-description {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.entry-title {
+  position: relative;
+}
+
 h1.entry-title {
   padding: 0;
   margin: 0;
@@ -1339,6 +1347,16 @@ h1.entry-title {
 
 .home .site-main {
   margin: 0;
+}
+
+.home #front-page.entry-content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.home #front-page.entry-content p {
+  font-size: 1.5em;
+  margin: 0 0 1em;
 }
 
 .home #front-page a {
@@ -1506,6 +1524,37 @@ a.post-edit-link {
 
 #comments .reply {
   margin: 15px 0px 0;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.flash-tab {
+  font-size: 13px;
+  position: absolute;
+  top: -10px;
+  transform: rotate(15deg);
+  padding: 6px 12px;
+  right: 0px;
+  opacity: .7;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.flash-tab.tab--red {
+  background: #F44336;
+}
+
+.flash-tab.tab--blue {
+  background: #2196F3;
+}
+
+.flash-tab.tab--green {
+  background: #4CAF50;
+}
+
+#footer-menu .flash-tab {
+  display: none;
 }
 
 /*--------------------------------------------------------------

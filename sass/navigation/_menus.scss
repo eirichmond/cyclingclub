@@ -171,6 +171,9 @@
     margin: 0 0 2em;
     list-style: none;
     border-bottom: 1px solid $color__primary-accent;
+    ul {
+	    padding: 0px;
+    }
    	li {
 	    display: inline;
 	    content: '';
