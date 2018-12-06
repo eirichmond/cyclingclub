@@ -88,6 +88,10 @@ fix styling of search widget so in keeping with the default design
 ### css button style
 correct transparent to accent color
 
+## [1.1.1] - 1-12-2018
+### markup and css tweaks
+additional markup add for extras including flashes and tabs
+
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)

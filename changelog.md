@@ -80,3 +80,8 @@ fix styling of search widget so in keeping with the default design
 ## [1.1.0] - 30-11-2018
 ### css button style
 correct transparent to accent color
+
+
+## [1.1.1] - 1-12-2018
+### markup and css tweaks
+additional markup add for extras including flashes and tabs
