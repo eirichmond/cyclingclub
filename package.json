@@ -15,12 +15,12 @@
   "author": "Elliott Richmond",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.26.3",
     "gulp-autoprefixer": "^4.1.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.2"
   },
   "dependencies": {
     "gulp": "^3.9.1",
-    "npm": "^6.1.0"
+    "npm": "^6.7.0"
   }
 }
