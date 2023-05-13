@@ -35,27 +35,16 @@
 	.site-main {
 		margin: 0;
 	}
-	#front-page {
-		&.entry-content {
-			margin-left: 10%;
-			margin-right: 10%;
-			p {
-			    font-size: 1.5em;
-			    margin: 0 0 1em;
-			}
+	#front-page a {
+		color: lighten($color__primary-accent, 20%);
+		transition: all 0.5s ease;
+		&:hover {
+			color: lighten($color__primary-accent, 50%);
 		}
-		a {
-			color: lighten($color__primary-accent, 20%);
-			transition: all 0.5s ease;
-			&:hover {
-				color: lighten($color__primary-accent, 50%);
-			}
-			&.button {
-				color: #fff;
-			}
+		&.button {
+			color: #fff;
 		}
 	}
-	
 
 }
 

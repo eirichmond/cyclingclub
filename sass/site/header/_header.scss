@@ -33,10 +33,6 @@ p.site-description {
     color: rgba(255, 255, 255, 0.5)
 }
 
-.entry-title {
-	position: relative;
-}
-
 h1.entry-title {
     padding: 0;
     margin: 0;
@@ -52,4 +48,7 @@ h1.entry-title {
 	height: 0;
 	padding-bottom: 34.45%; /* 16:9 */
 	overflow: hidden;
+    img {
+        min-width: 100%;
+    }
 }

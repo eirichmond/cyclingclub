@@ -12,6 +12,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside id="tertiary" class="widget-area thirds-grid-container">
+<aside id="tertiary" class="widget-area">
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
 </aside><!-- #secondary -->

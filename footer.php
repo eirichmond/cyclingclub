@@ -31,7 +31,7 @@
 			?></a>
 			<span class="sep"> | </span>
 			
-			<a href="<?php echo esc_url( __( 'https://cyclingclubpro.com/', 'cyclingclub' ) ); ?>"><?php
+			<a href="<?php echo esc_url( __( 'https://squareone.software/', 'cyclingclub' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Theme by %s', 'cyclingclub' ), 'Cycling Club Pro' );
 			?></a>

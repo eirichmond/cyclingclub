@@ -120,10 +120,26 @@
     font-weight: bold;
 }
 
-
-#tertiary {
-	
+#secondary {
+	&.widget-area {
+		display: flex;
+	}
 	.widget {
+		ul,
+		ol {
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+
+}
+#tertiary {
+	&.widget-area {
+		display: flex;
+	}
+	.widget {
+		flex-grow: 1;
+		flex-basis: 0;
 		color: #fff;
 		.widget-title {
 		    font-size: 1em;

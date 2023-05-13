@@ -4,8 +4,8 @@ Contributors: Elliott Richmond
 Tags: two-columns, custom-colors, footer-widgets
 
 Requires at least: 4.9
-Tested up to: 4.9.8
-Stable tag: 1.1.0
+Tested up to: 6.2
+Stable tag: 1.1.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -88,15 +88,20 @@ fix styling of search widget so in keeping with the default design
 ### css button style
 correct transparent to accent color
 
-## [1.1.1] - 1-12-2018
-### markup and css tweaks
-additional markup add for extras including flashes and tabs
+## [1.1.1] - 12-05-2023
+### fixes and tests
+tested wp compatibility
+added flexbox to widgets
+fixed widgets margins and padding
+fixed comment margins and padding
+fixed defualt font
+added theme settings
+
 
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
-* screenshot uses an image from https://pixabay.com/ All contents are released under Creative Commons CC0, which makes them safe to use without asking for permission or giving credit to the artist - even for commercial purposes.
 
 == Copyright ==
 
@@ -112,10 +117,6 @@ Source: https://necolas.github.io/normalize.css/
 Google Fonts, Copyright Google Fonts
 License:  Creative Commons Attribution 3.0.
 Source: https://creativecommons.org/licenses/by/3.0/
-
-Screenshot featured header image, Copyright Pixabay
-License: CC0 1.0 Universal (CC0 1.0) 
-Source: https://pixabay.com/en/people-man-woman-bike-bicycle-2597767/
 
 Font Awesome Free
 License: CC BY 4.0 License
